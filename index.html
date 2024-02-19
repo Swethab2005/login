@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Login and registration form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <span class="title">Login</span>
+            <form onsubmit="return validate_form()" action="login.php" method="post">
+                <div class="input-field">
+                    <input type="text" placeholder="enter your email" id="emailid" name="emailid" required/>
+                    <i class="uil uil-envelope icon"></i>
+                    
+                </div>
+                <div id="error_emailid" class="error"></div>
+                <div class="input-field">
+                    <input type="password" placeholder="enter your password" id="password" name="password" required />
+                    <i class="uil uil-lock icon"></i>
+                    
+                </div>
+                <div id="error_password" class="error"></div>
+                <div class="input-field button">
+                    <input type="submit" value="Login Now">
+                </div>
+                
+
+            </form>
+            <div class="login-signup">
+                <span class="text">Not a member?
+                    <a href="index2.html" class="text signup-text">Register Here! </a>
+                </span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
